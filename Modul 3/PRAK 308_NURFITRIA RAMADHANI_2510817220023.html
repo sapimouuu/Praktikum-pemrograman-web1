@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <title>Form</title>
+    </head>
+
+    <body>
+        <form>
+        <table border="1" cellspacing="1" cellpadding="10" width="500" align="center">
+        <tr>
+            <th bgcolor="skyblue"><font color="red" size="5" face="Arial">Pendaftaran Kursus</font></th>
+            </tr>
+                <td bgcolor="grey" valign="top">
+                <font face="Arial">
+                    <b>Data Diri</b>
+                <br><br>
+                <table cellspacing="4" cellpadding="0">
+                        <tr>
+                            <td valign="top"><font face="Times New Roman">Nama</font></td>
+                            <td width="30"></td>
+                            <td><input type="text" name="nama" size="20"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><font face="Times New Roman">Nim</font></td>
+                            <td></td>
+                            <td><input type="text" name="nim" size="20"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><font face="Times New Roman">E-mail</font></td>
+                            <td></td>
+                            <td><input type="email" name="email" size="20"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><font face="Times New Roman">Tanggal Lahir</font></td>
+                            <td></td>
+                            <td><input type="date" name="tanggal" size="20"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><font face="Times New Roman">Jenis Kelamin</font></td>
+                            <td></td>
+                            <td>
+                                <input type="radio" name="jk" value="laki"> <font face="Times New Roman">Laki-laki</font><br>
+                                <input type="radio" name="jk" value="perempuan"> <font face="Times New Roman">Perempuan</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><font face="Times New Roman">Pilih Program Kursus</font></td>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" name="c" value="c#"> <font face="Times New Roman">C#</font><br>
+                                <input type="checkbox" name="java" value="java"> <font face="Times New Roman">Java</font><br>
+                                <input type="checkbox" name="sql" value="sql"> <font face="Times New Roman">SQL</font><br>
+                                <input type="checkbox" name="html" value="html"> <font face="Times New Roman">HTML dan PHP</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><font face="Times New Roman">Pilihan Hari/Jam Kursus</font></td>
+                            <td></td>
+                            <td>
+                                <select name="jadwal">
+                                    <option value="senin-rabu">Senin - Rabu/09.00 - 11.00</option>
+                                    <option value="kamis-sabtu">Kamis - Sabtu/09.00 - 11.00</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="salmon" valign="top">Komentar Anda
+                <br>
+                <textarea name="deskripsi" cols="50" rows="5"></textarea>
+                <br>
+                <input type="reset" value="Reset" name="reset">
+                <input type="submit" value="Submit" name="submit">
+                <input type="button" value="Cancel" name="Cancel">
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
